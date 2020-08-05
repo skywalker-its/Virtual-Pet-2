@@ -18,7 +18,7 @@ function setup() {
   food.getFS
   canvas = createCanvas(800, 800);
   dog = createSprite (575, 250,1,1);
-  dog.scale = 0.15;
+  dog.scale = 0.5;
   dog.addImage(dogimg, "dogimg");
 
   stockbutton = createButton("Add Stock");
@@ -41,8 +41,10 @@ function draw() {
   getFeedTime();
  /// foodStock = db.ref('Food');
  /// foodStock.on('value', readStock);
-  stroke("white");
-  text("Food Remaing: "+ food.foodStock, 50, 100);
+ noStroke();
+ textSize(35)
+ fill("blue")
+  text("Food Remaing: "+ food.foodStock, 50, 120);
   
   text("Last Fed: "+ food.lastFed, 50, 80 )
   //text("Remember the Up arrow, will feed the dog.",50, 150);
