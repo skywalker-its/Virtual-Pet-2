@@ -41,11 +41,11 @@ deductF(){
         
         for(var i = 0; i < this.foodStock; i++){
               if(i%10 === 0){
-                x = 80
-                y = y + 50
+                x = 60
+                y = y + 60
             }
             
-            image(this.bottleimg, x, y , 50, 50)
+            image(this.bottleimg, x, y , 60, 55)
             x = x + 30
         }
     }
